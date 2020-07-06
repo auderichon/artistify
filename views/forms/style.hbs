@@ -1,1 +1,14 @@
-todo : style create
+<h1 class="title">Create style</h1>
+
+<form method="post" action="/styles/create" class="form">
+    <label class="label" for="name" class="label">Name</label>
+    <input class="input" type="text" id="name" name="name" placeholder="Style's name" required>
+
+    <label class="label" for="color" class="label">Color</label>
+    <input class="input" type="color" id="color" name="color" placeholder="Color" required>
+
+    <label class="label" for="country" class="wikiURL">WikiURL</label>
+    <input class="input" type="text" id="wikiURL" name="wikiURL" placeholder="WikiURL" required>
+
+    <button class="btn">Create style</button>
+</form>

@@ -1,1 +1,14 @@
-todo : label update form
+<h1 class="title">Update style</h1>
+
+<form method="post" action="/styles/update/{{_id}}" class="form">
+    <label class="label" for="name" class="label">Name</label>
+    <input class="input" type="text" id="name" name="name" placeholder="Style's name" value={{name}} required>
+
+    <label class="label" for="color" class="label">Color</label>
+    <input class="input" type="color" id="color" name="color" placeholder="Color" value={{color}} required>
+
+    <label class="label" for="country" class="wikiURL">WikiURL</label>
+    <input class="input" type="text" id="wikiURL" name="wikiURL" placeholder="WikiURL" value={{wikiURL}} required>
+
+    <button class="btn">Update style</button>
+</form>
